@@ -23,6 +23,7 @@ body {
 
 main {
     margin: 0 auto;
+    width: 50%;
     display: flex;
     flex-flow: column nowrap;
 }
@@ -42,7 +43,7 @@ header h1 {
     align-items: center;
 }
 
-nav ul {
+ header ul {
     margin: 0px 80px 0px 20px;
     display: flex;
     flex-flow: row nowrap;
@@ -51,28 +52,28 @@ nav ul {
     height: 100px;
 }
 
-nav ul li {
+header nav ul li {
     margin-top: 8px;
     margin-left: 20px;
     font-size: 1.3rem;
 }
 
-nav li a, div li a {
+header nav li a, div li a {
     text-decoration: none;
     color: white;
     transition: 0.2s ease-in-out;
     cursor: pointer;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
     border-bottom: 5px solid aqua;
 }
 
-nav ul li a::after {
+header nav ul li a::after {
     border-bottom: 5px solid aqua;
 }
 
-div ul {
+header div ul {
     display: flex;
     flex-flow: row nowrap;
     align-items: flex-start;
@@ -81,14 +82,14 @@ div ul {
     height: 100px;
 }
 
-div ul li {
+header div ul li {
     margin-left: 10px;
     height: 23px;
     display: flex;
     justify-content: center;
 }
 
-div ul li a {
+header div ul li a {
     color: #d3d3d3;
     padding: 3px;
     font-size: 0.8rem;
@@ -96,7 +97,7 @@ div ul li a {
     
 }
 
-div ul li button {
+header div ul li button {
     padding: 2px;
     border: none;
     background-color: #60a000;
@@ -105,17 +106,85 @@ div ul li button {
     cursor: pointer;
 }
 
-div ul li button:hover {
+header div ul li button:hover {
     background-color: #6fb801;
 }
 
-div ul li a:hover {
+header div ul li a:hover {
     color: white;
 }
 
 /* Estilização do conteúdo dentro do main */
 
+main div.nav-filters {
+    margin-top: 20px;
+    height: 35px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #243d64;
+    padding: 5px;
+    border-radius: 5px;
+}
 
+div.search {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 30px;
+    background-color: #038888;
+    overflow: hidden;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+
+div.search input {
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: #007a7a;
+    color: white;
+    padding: 10px;
+}
+
+div.search input::placeholder{
+    color: white;
+}
+
+div.search button {
+    height: 100%;
+    background-color: #019c9c;
+    border: 1px solid #66666679;
+    cursor: pointer;
+}
+
+div.search:hover, div.searc:focus {
+    border: 0.5px solid #00cfcf;
+}
+
+ul.filters {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-right: 10px;
+}
+
+ul.filters li {
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+ul.filters li a {
+    color: #d4d4d4;
+    font-size: 0.9rem;
+}
+
+ul.filters li a:hover {
+    color: white;
+}
 
 
 
