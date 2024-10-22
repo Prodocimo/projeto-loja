@@ -159,7 +159,7 @@ div.search button {
     cursor: pointer;
 }
 
-div.search:hover, div.searc:focus {
+div.search:hover {
     border: 0.5px solid #00cfcf;
 }
 
