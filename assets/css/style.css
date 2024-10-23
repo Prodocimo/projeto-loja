@@ -23,9 +23,10 @@ body {
 
 main {
     margin: 0 auto;
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
+    text-align: center;
 }
 
 header {
@@ -117,6 +118,8 @@ header div ul li a:hover {
 /* Estilização do conteúdo dentro do main */
 
 main div.nav-filters {
+    width: 50%;
+    margin: 0 auto;
     margin-top: 20px;
     height: 35px;
     display: flex;

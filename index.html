@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games Center</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
 </head>
 <body>
     <header>
@@ -43,10 +44,37 @@
            </ul>
         </div>
 
-        <section class="carrossel">
+        <section class="slider">
             <h2>Acompanhe os jogos em destaques!</h2>
-            <div class="cards">
-                
+            <div class="slider-content">
+
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+
+                <div class="slide-imgs s1">
+                    <img src="assets/img/banners/hollow-knight.jpg" alt="imagem-1">
+                </div>
+
+                <div class="slide-imgs">
+                    <img src="assets/img/banners/terraria.jpg" alt="imagem-2">
+                </div>
+
+                <div class="slide-imgs">
+                    <img src="assets/img/banners/rdr2.jpg" alt="imagem-3">
+                </div>
+
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
             </div>
         </section>
 
@@ -68,4 +96,5 @@
 
     </footer>
 </body>
+<script src="assets/main.js"></script>
 </html>
