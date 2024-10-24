@@ -36,7 +36,7 @@ div.slide-imgs img {
 div.slide-imgs .overlay{
     position: absolute;
     width: 50%;
-    height: 100%;
+    height: auto;
     top: 0;
     left: 25%;
     background: radial-gradient(circle, transparent 20%, #000000c4);
