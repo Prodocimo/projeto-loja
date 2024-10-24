@@ -28,7 +28,7 @@ div.slide-imgs {
 div.slide-imgs img {
     width: 50%;
     mask-image: -webkit-radial-gradient(circle black 0%, black 50%);
-    mask-image: radial-gradient(circle, black 0%, #000000 50%);
+    mask-image: radial-gradient(circle, black 50%, #000000 50%);
 }
 
 div.nav-manual, div.nav-auto {
