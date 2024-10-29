@@ -6,6 +6,7 @@
     <title>Games Center</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/slider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> <!-- swiper cdn -->
 </head>
 <body>
     <header>
@@ -45,7 +46,7 @@
         </div>
 
         <section class="slider">
-            <h2>Acompanhe os jogos em destaques!</h2>
+            <h2>Acompanhe os jogos em destaque!</h2>
             <div class="slider-content">
 
                 <input type="radio" name="radio-btn" id="radio1">
@@ -81,15 +82,23 @@
             </div>
         </section>
 
-
         <section class="main-content">
-            <div class="content">
-                <div class="items"></div>
-                <div class="items"></div>
-                <div class="items"></div>
-                <div class="items"></div>
-                <div class="items"></div>
-                <div class="items"></div>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">Slide 1</div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
             </div>
         </section>
 
@@ -99,5 +108,7 @@
 
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!-- swiper -->
 <script src="assets/main.js"></script>
+
 </html>

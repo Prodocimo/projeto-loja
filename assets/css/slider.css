@@ -13,7 +13,7 @@ div.slider-content {
     height: auto;
     display: flex;
 }
-
+ 
 div.slider-content input{
     display: none;
 }
@@ -21,13 +21,15 @@ div.slider-content input{
 div.slide-imgs {
     position: relative;
     width: 25%;
-    height: 400px;
+    height: auto;
     text-align: center;
     transition: 1s ease-in-out;
     overflow: hidden;
 }
 
 div.slide-imgs img {
+    object-fit: cover;
+    height: 100%;
     width: 50%;
     /* mask-image: -webkit-radial-gradient(circle, black 50%, black 50%); */
     /* mask-image: radial-gradient(circle at 50% 50%, transparent 0%, #000000 100%); */
@@ -36,10 +38,11 @@ div.slide-imgs img {
 div.slide-imgs .overlay{
     position: absolute;
     width: 50%;
-    height: auto;
+    height: 100%;
     top: 0;
     left: 25%;
-    background: radial-gradient(circle, transparent 20%, #000000c4);
+    background: radial-gradient(circle, transparent 10%, #000000a4 100%);
+    background: -webkit-radial-gradient(circle, transparent 10%, #000000a4 100%);
 }
 
 div.nav-manual, div.nav-auto {

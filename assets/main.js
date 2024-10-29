@@ -13,3 +13,27 @@ function nextSlide() {
 
     document.getElementById("radio"+count).checked = true;
 }
+
+
+/* ========= swiper ======== */
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    grabCursor: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+
+  // Navigation arrows
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+}); 
+
