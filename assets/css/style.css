@@ -200,7 +200,6 @@ section.main-content {
     margin: 100px auto;
     display: flex;
     flex-flow: row nowrap;
-    background-color: white;
 }
 
 section div.swiper {
@@ -213,9 +212,9 @@ div div.swiper-slide {
 }
 
 div.swiper-slide img.swiper-img {
-    height: 90%;
+    height: auto;
     width: 100%;
-    object-fit: fill;
+    object-fit: contain;
 }
 
 
