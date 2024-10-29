@@ -196,6 +196,7 @@ ul.filters li a:hover {
 
 section.main-content {
     width: 50%;
+    height: 500px;
     margin: 100px auto;
     display: flex;
     flex-flow: row nowrap;
@@ -204,7 +205,17 @@ section.main-content {
 
 section div.swiper {
   width: 100%;
-  height: 300px;
+}
+
+div div.swiper-slide {
+    overflow: hidden;
+    height: 200px;
+}
+
+div.swiper-slide img.swiper-img {
+    height: 90%;
+    width: 100%;
+    object-fit: fill;
 }
 
 
