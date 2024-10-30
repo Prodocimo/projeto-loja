@@ -194,8 +194,8 @@ ul.filters li a:hover {
 
 /* estilização do swiper */
 
-section.main-content {
-    width: 50%;
+section.swiper-content {
+    width: 100%;
     height: auto;
     margin: 100px auto;
     display: flex;
@@ -203,11 +203,11 @@ section.main-content {
 }
 
 section div.swiper {
-  width: 100%;
+  width: 50%;
+  margin: 0 auto;
 }
 
 div div.swiper-slide {
-    overflow: hidden;
     height: auto;
 }
 
@@ -215,6 +215,54 @@ div.swiper-slide img.swiper-img {
     height: auto;
     width: 100%;
     object-fit: cover;
+}
+
+div.swiper-slide div.swiper-text-content {
+    background-color: white;
+    height: 200px;
+    width: 100%;
+}
+
+div.swiper-button-next {
+    position: relative;
+    left: -24%;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: translateX( 90%);
+
+    background-color: #a0e4ff ;
+    height: 100px;
+    width: 30px;
+    color: #172535;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 3px #87ddff2f;
+    transition: 0.1s ease-in-out;
+}
+
+div.swiper-button-prev {
+    position: relative;
+    left: 24%;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-90%);
+
+    background-color: #a0e4ff;
+    height: 100px;
+    width: 30px;
+    color: #172535;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 3px #87ddff2f;
+    transition: 0.1s ease-in-out;
+}
+
+div.swiper-button-next:hover {
+    transform: translateX(90%) scale(1.05);
+}
+
+div.swiper-button-prev:hover {
+    transform: translateX(-90%) scale(1.05);
 }
 
 

@@ -22,6 +22,7 @@ const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     loop: true,
     grabCursor: true,
+    speed: 200,
 
   // If we need pagination
   pagination: {
@@ -48,10 +49,12 @@ const swiper = new Swiper('.swiper', {
     },
     // when window width is >= 640px
     1366: {
-      slidesPerView: 2,
-      spaceBetween: 30
+      slidesPerView: 3,
+      spaceBetween: 20
     }
   }
 
 }); 
+
+
 
