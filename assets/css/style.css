@@ -249,12 +249,17 @@ div.swiper-button-next, div.swiper-button-prev {
     padding: 5px;
     border-radius: 5px;
     box-shadow: 0px 0px 3px 3px #87ddff2f;
+    transition: 0.1s ease-in-out;
+}
+
+div.swiper-button-prev:hover, div.swiper-button-next:hover {
+    background-color: #7ed8fc;
 }
 
 div.swiper-button-next:active {
-    transform: translateX(90%) scale(1.05);
+    transform: translateX(90%) scale(1.02);
 }
 
 div.swiper-button-prev:active {
-    transform: translateX(-90%) scale(1.05);
+    transform: translateX(-90%) scale(1.02);
 }
