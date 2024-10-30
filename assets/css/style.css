@@ -257,11 +257,11 @@ div.swiper-button-prev {
     transition: 0.1s ease-in-out;
 }
 
-div.swiper-button-next:hover {
+div.swiper-button-next:active {
     transform: translateX(90%) scale(1.05);
 }
 
-div.swiper-button-prev:hover {
+div.swiper-button-prev:active {
     transform: translateX(-90%) scale(1.05);
 }
 
