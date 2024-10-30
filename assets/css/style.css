@@ -229,14 +229,6 @@ div.swiper-button-next {
     top: 50%;
     transform: translateY(-50%);
     transform: translateX( 90%);
-
-    background-color: #a0e4ff ;
-    height: 100px;
-    width: 30px;
-    color: #172535;
-    padding: 5px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 3px 3px #87ddff2f;
     transition: 0.1s ease-in-out;
 }
 
@@ -246,7 +238,10 @@ div.swiper-button-prev {
     top: 50%;
     transform: translateY(-50%);
     transform: translateX(-90%);
+    transition: 0.1s ease-in-out;
+}
 
+div.swiper-button-next, div.swiper-button-prev {
     background-color: #a0e4ff;
     height: 100px;
     width: 30px;
@@ -254,7 +249,6 @@ div.swiper-button-prev {
     padding: 5px;
     border-radius: 5px;
     box-shadow: 0px 0px 3px 3px #87ddff2f;
-    transition: 0.1s ease-in-out;
 }
 
 div.swiper-button-next:active {
@@ -264,7 +258,3 @@ div.swiper-button-next:active {
 div.swiper-button-prev:active {
     transform: translateX(-90%) scale(1.05);
 }
-
-
-
-
