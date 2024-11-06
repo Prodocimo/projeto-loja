@@ -21,7 +21,6 @@ const swiper = new Swiper('.swiper', {
   // Optional parameters
     direction: 'horizontal',
     loop: true,
-    grabCursor: true,
     speed: 200,
 
   // If we need pagination
@@ -56,5 +55,8 @@ const swiper = new Swiper('.swiper', {
 
 }); 
 
+/* Estilização das bordas dnânmicas dos slides-swiper */
+
+const shadowSlide = document.getElementById("img1");
 
 

@@ -16,7 +16,7 @@ body {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     align-items: center;
     font-family: "Poppins", sans-serif, Arial;
 
@@ -196,10 +196,11 @@ ul.filters li a:hover {
 
 section.swiper-content {
     width: 100%;
-    height: auto;
+    height: 300px;
     margin: 100px auto;
     display: flex;
     flex-flow: row nowrap;
+    user-select: none;
 }
 
 section div.swiper {
@@ -207,8 +208,13 @@ section div.swiper {
   margin: 0 auto;
 }
 
-div div.swiper-slide {
+div div.swiper-slide, div.swiper-slide-active, div.swiper-slide-next{
     height: auto;
+    max-height: 250px;
+    background-color: #1A2A3B;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px #00000013;
+    border-radius: 5px;
 }
 
 div.swiper-slide img.swiper-img {
@@ -218,16 +224,67 @@ div.swiper-slide img.swiper-img {
 }
 
 div.swiper-slide div.swiper-text-content {
-    background-color: white;
-    height: 200px;
+    height: 100%;
+    max-height: 150px;
     width: 100%;
+}
+ div.swiper-text-content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+ }
+
+div.text-content-interaction {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 10px;
+    width: 150px;
+    justify-content: space-evenly;
+}
+
+button#iFavorite, button#iShoppingCart {
+    width: 45%;
+    border: none;
+    background-color: #1c3050;
+    border-radius: 5px;
+    transition: 0.1s ease-in-out;
+}
+
+button#iFavorite:hover, button#iShoppingCart:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: #1f3558;
+
+}
+
+button#iBuy {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    background-color: #6fb801;
+    border: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: 0.1s ease-in-out;
+}
+
+button#iBuy:hover {
+    background-color: #60a000;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+button#iBuy p {
+    color: white;
+    padding: 5px;
 }
 
 div.swiper-button-next {
     position: relative;
     left: -24%;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 30%;
+    transform: translateY(-30%);
     transform: translateX( 90%);
     transition: 0.1s ease-in-out;
 }
@@ -235,8 +292,8 @@ div.swiper-button-next {
 div.swiper-button-prev {
     position: relative;
     left: 24%;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 30%;
+    transform: translateY(-30%);
     transform: translateX(-90%);
     transition: 0.1s ease-in-out;
 }
@@ -263,4 +320,13 @@ div.swiper-button-next:active {
 
 div.swiper-button-prev:active {
     transform: translateX(-90%) scale(1.02);
+}
+
+span.swiper-pagination-bullet {
+    border-radius: 0;
+    width: 20px;
+}
+
+span.swiper-pagination-bullet-active {
+    background-color: #243d64;
 }
