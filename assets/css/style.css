@@ -248,14 +248,16 @@ button#iFavorite, button#iShoppingCart {
     border: none;
     background-color: #1c3050;
     border-radius: 5px;
-    transition: 0.1s ease-in-out;
+    transition: 0.05s ease-in-out;
 }
 
 button#iFavorite:hover, button#iShoppingCart:hover {
-    transform: scale(1.05);
     cursor: pointer;
     background-color: #1f3558;
+}
 
+button#iFavorite:active, button#iShoppingCart:active {
+    transform: scale(0.95);
 }
 
 button#iBuy {
@@ -266,13 +268,16 @@ button#iBuy {
     border: none;
     margin-top: 10px;
     border-radius: 5px;
-    transition: 0.1s ease-in-out;
+    transition: 0.05s ease-in-out;
 }
 
 button#iBuy:hover {
     background-color: #60a000;
-    transform: scale(1.05);
     cursor: pointer;
+}
+
+button#iBuy:active {
+    transform: scale(0.95);
 }
 
 button#iBuy p {
