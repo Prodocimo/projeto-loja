@@ -404,14 +404,54 @@ div.footer-content {
 div.lead {
     margin-top: 20px;
     margin-bottom: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+div.lead p {
+    font-weight: 500;
+}
+
+div.lead span {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #050d38;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 10px 5px #0811475b;
+}
+
+div.lead span img {
+    width: 20%;
+    margin-right: 7px;
+}
+
+div.lead span input {
+    width: 80%;
+    height: 60%;
+    padding-left: 10px;
+    outline: none;
 }
 
 div.copyright {
     margin-bottom: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+div.copyright h3 {
+    text-shadow: 0px 0px 5px #ffffff69;
 }
 
 div.support {
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
 
 div.support ul {
@@ -427,5 +467,14 @@ div.support ul li {
 }
 
 div.support ul li:not(:last-child) {
-    border-right: 1px solid gray;
+    border-right: 1px solid #808080a2;
+}
+
+div.support ul li a {
+    color: #adadad;
+    font-weight: 400;
+}
+
+div.support ul li a:hover {
+    color: #ffffff;
 }
