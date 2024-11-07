@@ -249,6 +249,9 @@ button#iFavorite, button#iShoppingCart {
     background-color: #1c3050;
     border-radius: 5px;
     transition: 0.05s ease-in-out;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 5px #0000001c;
 }
 
 button#iFavorite:hover, button#iShoppingCart:hover {
@@ -269,6 +272,7 @@ button#iBuy {
     margin-top: 10px;
     border-radius: 5px;
     transition: 0.05s ease-in-out;
+    box-shadow: 0px 0px 5px #0000001c;
 }
 
 button#iBuy:hover {
