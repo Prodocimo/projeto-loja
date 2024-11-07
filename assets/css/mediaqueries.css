@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
-@media screen  {
-    
+@media screen and (max-width: 768px) {
+    main {
+        width: 100%;
+    }
 }
