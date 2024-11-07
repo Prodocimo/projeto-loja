@@ -240,11 +240,11 @@ div.text-content-interaction {
     flex-flow: row wrap;
     margin-top: 10px;
     width: 150px;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 button#iFavorite, button#iShoppingCart {
-    width: 45%;
+    width: 47%;
     border: none;
     background-color: #1c3050;
     border-radius: 5px;
@@ -261,7 +261,7 @@ button#iFavorite:active, button#iShoppingCart:active {
 }
 
 button#iBuy {
-    width: 95%;
+    width: 100%;
     display: flex;
     justify-content: center;
     background-color: #6fb801;
@@ -311,7 +311,7 @@ div.swiper-button-next, div.swiper-button-prev {
     padding: 5px;
     border-radius: 5px;
     box-shadow: 0px 0px 3px 3px #87ddff2f;
-    transition: 0.1s ease-in-out;
+    transition: 0.05s ease-in-out;
     user-select: none;
 }
 
@@ -320,11 +320,11 @@ div.swiper-button-prev:hover, div.swiper-button-next:hover {
 }
 
 div.swiper-button-next:active {
-    transform: translateX(90%) scale(1.02);
+    transform: translateX(90%) scale(0.95);
 }
 
 div.swiper-button-prev:active {
-    transform: translateX(-90%) scale(1.02);
+    transform: translateX(-90%) scale(0.95);
 }
 
 span.swiper-pagination-bullet {
