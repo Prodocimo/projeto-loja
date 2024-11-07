@@ -18,7 +18,7 @@ body {
     justify-content: flex-start;
     overflow-x: hidden !important;
     align-items: center;
-    font-family: "Poppins", sans-serif, Arial;
+    font-family: "Poppins", sans-serif, Arial !important;
 
 }
  
@@ -301,6 +301,13 @@ div.offer-price {
 span.offer {
     width: 50%;
     background-color: #60a000a9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span.offer p {
+    font-weight: 600;
 }
 
 span.price {
@@ -312,7 +319,6 @@ span.price {
 
 span.price p.p1 {
     font-size: 0.7em;
-    text-align: center;
 }
 
 span.price p.p2 {
