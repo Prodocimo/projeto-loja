@@ -1,6 +1,15 @@
 @charset "UTF-8";
 
 @media screen and (max-width: 768px) {
+
+    header nav {
+        display: none;
+    }
+
+    div.nav-filters ul {
+        display: none;
+    }
+
     main {
         width: 100%;
     }
