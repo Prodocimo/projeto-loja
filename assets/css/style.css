@@ -124,6 +124,7 @@ main div.nav-filters {
     width: 50%;
     margin: 0 auto;
     margin-top: 20px;
+    margin-bottom: 50px;
     height: 35px;
     display: flex;
     flex-flow: row nowrap;
@@ -196,17 +197,21 @@ ul.filters li a:hover {
 
 section.swiper-content {
     width: 100%;
-    height: 320px;
+    height: 365px;
     margin: 100px auto;
     display: flex;
-    flex-flow: row nowrap;
     user-select: none;
 }
 
-section div.swiper {
+section.swiper-content div.swiper {
   width: 50%;
   margin: 0 auto;
 }
+
+div.swiper h2 {
+    margin-bottom: 20px;
+}
+
 
 div div.swiper-slide, div.swiper-slide-active, div.swiper-slide-next{
     height: auto;
@@ -332,8 +337,8 @@ span.price p.p2 {
 div.swiper-button-next {
     position: relative;
     left: -24%;
-    top: 30%;
-    transform: translateY(-30%);
+    top: 45%;
+    transform: translateY(-45%);
     transform: translateX( 90%);
     transition: 0.1s ease-in-out;
 }
@@ -341,8 +346,8 @@ div.swiper-button-next {
 div.swiper-button-prev {
     position: relative;
     left: 24%;
-    top: 30%;
-    transform: translateY(-30%);
+    top: 45%;
+    transform: translateY(-45%);
     transform: translateX(-90%);
     transition: 0.1s ease-in-out;
 }
@@ -378,4 +383,49 @@ span.swiper-pagination-bullet {
 
 span.swiper-pagination-bullet-active {
     background-color: #243d64;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #000522;
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+div.footer-content {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+div.lead {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div.copyright {
+    margin-bottom: 20px;
+}
+
+div.support {
+    margin-bottom: 10px;
+}
+
+div.support ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+div.support ul li {
+    margin: 0px;
+    padding: 5px;
+    line-height: 10px;
+}
+
+div.support ul li:not(:last-child) {
+    border-right: 1px solid gray;
 }
