@@ -256,8 +256,9 @@ ul.filters li {
 }
 
 ul.filters li a {
+    text-decoration: none;
     color: #d4d4d4;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 ul.filters li a:hover {
