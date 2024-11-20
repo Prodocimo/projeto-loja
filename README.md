@@ -1,2 +1,2 @@
-# https://prodocimo.github.io/projeto-loja/
+# https://prodocimo.github.io/projeto-loja/ <-site hospedado
  
