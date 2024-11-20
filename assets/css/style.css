@@ -63,23 +63,91 @@ header nav ul li {
     margin-left: 20px;
     font-size: 1.3rem;
 }
+/* estilização do menu mobile */
+div.nav-mobile-btn-open {
+    margin: auto 40px;
+    width: 40px;
+    height: 40px;
+    display: none;
+}
 
-header nav li a, div li a {
+div.nav-mobile-btn-open img {
+    width: 100%;
+}
+
+div.nav-mobile {
+    position: fixed;
+    width: 0%;
+    height: 100%;
+    z-index: 9999;
+    right: 0;
+    background-color: #1b2e44;
+    transition: 0.3s ease-in-out;
+}
+
+div.nav-mobile.nav-menu-opened {
+    width: 70%;
+}
+
+div.menu-mobile-overflow {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 8888;
+    display: none;
+}
+
+div.nav-mobile.nav-menu-opened ~ div.menu-mobile-overflow {
+    display: block;
+}
+
+
+div.nav-mobile div.nav-mobile-btn-close {
+    margin: 20px;
+    height: 40px;
+    width: 40px;
+}
+
+
+div.nav-mobile div.nav-mobile-btn-close img {
+    width: 100%;
+}
+
+div.nav-mobile ul {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+
+div.nav-mobile ul li {
+    margin-top: 20px;
+}
+
+div.nav-mobile ul li a {
+    font-size: 1.2em;
+    height: 100%;
+}
+
+/* fim da estilização do menu mobile */
+
+header nav li a, div-user li a, div.nav-mobile ul li a {
     text-decoration: none;
     color: white;
     transition: 0.2s ease-in-out;
     cursor: pointer;
+    user-select: none;
 }
 
-header nav ul li a:hover {
+header nav ul li a:hover, div.nav-mobile ul li a:hover {
     border-bottom: 5px solid aqua;
 }
 
-header nav ul li a::after {
+header nav ul li a::after, div.nav-mobile ul li a::after {
     border-bottom: 5px solid aqua;
 }
 
-header div ul {
+header div-user ul {
     display: flex;
     flex-flow: row nowrap;
     align-items: flex-start;
@@ -95,7 +163,7 @@ header div ul li {
     justify-content: center;
 }
 
-header div ul li a {
+header div-user ul li a {
     color: #d3d3d3;
     padding: 3px;
     font-size: 0.8rem;
@@ -103,7 +171,7 @@ header div ul li a {
     
 }
 
-header div ul li button {
+header div-user ul li button {
     padding: 2px;
     border: none;
     background-color: #60a000;
@@ -112,11 +180,11 @@ header div ul li button {
     cursor: pointer;
 }
 
-header div ul li button:hover {
+header div-user ul li button:hover {
     background-color: #6fb801;
 }
 
-header div ul li a:hover {
+header div-user ul li a:hover {
     color: white;
 }
 
@@ -207,7 +275,7 @@ section.swiper-content {
 }
 
 section.swiper-content div.swiper {
-  width: 45%;
+  width: 50%;
   margin: 0 auto;
 }
 

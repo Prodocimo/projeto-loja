@@ -6,17 +6,23 @@
         display: none;
     }
 
-    header div ul {
+    header div-user ul {
         display: none;
+    }
+    /* estilização do menu mobile */
+    div.nav-mobile-btn-open {
+        display: block;
     }
 
     div.nav-filters ul {
         display: none;
     }
-
+    
     div.nav-filters{
         width: 90% !important;
     }
+
+    /* fim da estilização menu mobile */
 
     div.search  {
         width: 50%;

@@ -44,19 +44,31 @@ const swiper = new Swiper('.swiper', {
     // when window width is >= 480px
     768: {
       slidesPerView: 2,
-      spaceBetween: 30
+      spaceBetween: 20
     },
+
     // when window width is >= 640px
     1366: {
       slidesPerView: 3,
-      spaceBetween: 20
+      spaceBetween: 40
     }
   }
 
 }); 
 
-/* Estilização das bordas dnânmicas dos slides-swiper */
+/* função para menu mobile*/
 
-const shadowSlide = document.getElementById("img1");
+const MenuBtnOpen = document.querySelector('.nav-mobile-btn-open');
+const MenuMobile = document.querySelector('.nav-mobile');
+const MenuBtnClose = document.querySelector('.nav-mobile-btn-close');
+
+MenuBtnOpen.onclick = function() {
+  MenuMobile.classList.add('nav-menu-opened')
+}
+
+MenuBtnClose.onclick = function() {
+  MenuMobile.classList.remove('nav-menu-opened')
+}
+
 
 
