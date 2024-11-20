@@ -70,5 +70,7 @@ MenuBtnClose.onclick = function() {
   MenuMobile.classList.remove('nav-menu-opened')
 }
 
-
+MenuMobile.onclick = function() {
+  MenuMobile.classList.remove('nav-menu-opened')
+}
 
