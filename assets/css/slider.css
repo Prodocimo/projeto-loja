@@ -48,7 +48,7 @@ div.slide-imgs .overlay{
 div.nav-manual, div.nav-auto {
     position: absolute;
     width: 100%;
-    margin-top: 27%;
+    margin-top: 32%;
     display: flex;
     justify-content: center;
 }
